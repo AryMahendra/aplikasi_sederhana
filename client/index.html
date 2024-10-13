@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undiknas X FitHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <text name="" id="Support" cols="30">Support By</text>
+    <img src="https://fithub.id/images/illustration-fithub-logo.svg" alt="">
+    <div class="container">
+        <h1>Absensi Kehadiran Member</h1>
+
+        <!-- Form Tambah Absensi -->
+        <form id="form-absen">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="tanggal">Tanggal:</label>
+            <input type="date" id="tanggal" name="tanggal" required>
+
+            <button type="submit">Tambah Absen</button>
+        </form>
+
+        <!-- Tabel Absensi -->
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nama</th>
+                    <th>Tanggal</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="absensi-data">
+                <!-- Data absensi akan diisi oleh JavaScript -->
+            </tbody>
+        </table>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
